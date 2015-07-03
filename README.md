@@ -1,4 +1,4 @@
-Moabi DRC
+Openoil Tanzania
 ===========
 
-Jekyll build of the new Moabi site
+With thanks to http://crowdcover.github.io/site/
