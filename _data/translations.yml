@@ -38,11 +38,11 @@ en:
     snap: capture
 
   landing:
-    description: Moabi DRC is an independent initiative that collaboratively monitors natural resource use in the Democratic Republic of the Congo. Our community works toward a more transparent, equitable, and sustainable future for the people and environment of DRC.
-    report_button_name: Reports
-    report_button_text: Read field reports on a wide range of issues from REDD+ to the causes of forest loss
-    data_button_name: Maps
-    data_button_text: View our ever-growing geo-database of natural resource issues in DRC
+    description: Imagine an open oil industry...
+    report_button_name: Description
+    report_button_text: What we do
+    data_button_name: Data
+    data_button_text: See the data
 
   about:
     the_initiative: The Initiative
@@ -118,7 +118,7 @@ fr:
     snap: capture
 
   landing:
-    title: Cartographie collaborative de l'utilisation des terres
+    title: Openoil
     description: La plateforme de cartographie collaborative “Moabi RDC” est une initiative indépendante de suivi de l’utilisation des ressources naturelles en République Démocratique du Congo. Notre communauté d’utilisateurs travaille dans la perspective d’améliorer la transparence, l’équitabilité et la durabilité de la gestion des ressources naturelles pour les peuples et le maintien des écosystèmes de la RDC.
     report_button_name: Rapports
     report_button_text: Consultez les rapports de terrain appréhendant un grand éventail de problématiques, allant de la REDD+ aux pertes de forêt.
