@@ -11,6 +11,7 @@ define(['app/map-app', 'waypoints'], function (moabi, waypoints) {
     },
 
     reportScroll: function(dir) {
+	console.log('scrolling');
       if(dir === 'down'){
           var $this = $(this);
           $this.prev().removeClass('active');
