@@ -3,6 +3,18 @@ description: "Moabi is a collaborative mapping platform to monitor landuse plann
 baseurl: /tanzania
 permalink: /:title/:categories/
 markdown: kramdown
+defaults:
+  -
+    scope:
+      path: ""
+      type: ""
+    values:
+      oo_iframe:
+        opacity: 0.2
+      oo_html:
+        opacity: 0.2
+
+
 prose:
   rooturl: "_posts/blog"
   siteurl: "http://danohuiginn.github.io/tanzania"

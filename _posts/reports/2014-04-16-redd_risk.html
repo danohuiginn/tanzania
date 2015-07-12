@@ -5,18 +5,25 @@ tags:
   - report
 categories:
   - en
+defaults:
+  oo_iframe:
+    opacity: 0.811
+  oo_html:
+    opacity: 0.811
 
-title: REDD+ Risk
-description: Future forest loss in DRC is very uncertain. Decades of conflict and under investment have prevented the industrial scale of forestry and agricultural activities that characterized deforestation in Brazil and Indonesia – the other two large rainforest countries. As the country stabilizes, deforestation will increase, but predicting when and where it will occur presents an ongoing challenge to REDD+ implementation.
+
+
+title: Openoil
+description: TEXT
 
 img: http://farm4.staticflickr.com/3687/12483987584_3b2a7cf09a_b.jpg
-author: Leo Bottrill & Herve Kashongwe
+author: Openoil
 
 basemap:
     center:
-        lat: -2.877
-        lon: 22.830
-        zoom: 5
+        lat: -6.3
+        lon: 34.85
+        zoom: 8
     layers:
       - id: moabi_base
         z: -1
@@ -25,6 +32,9 @@ maplayer_options:
     subset: [moabi_redd_projects, moabi_mining, moabi_oil, moabi_logging, moabi_palm, moabi_transport, moabi_hydropower, moabi_transmission_lines, moabi_indigenous, moabi_protected]
 
 report:
+
+
+
   - title: Competition for resources threatens REDD+ in DRC
     text: A recent study by the Moabi DRC initiative has identified 6 existing and proposed land uses that could compete with REDD+ pilot project activities. New infrastructure, extractive industries, and industrial agriculture could cause forest loss that is not currently considered within reference emission levels. Many proposed activities are speculative, but over the thirty year life span of REDD+ projects, many could result in deforestation.
     layers: [moabi_redd_projects]
@@ -32,9 +42,10 @@ report:
                     ## any empty layers property should be not be assigned anything, rather than being assigned '[]'
                     ## the way I have things configured, layers can only point to a layer that appears in layer-ui (defined below) (also, layer-ui must exist)
     zoom_to:
-        lat: -2.877
-        lon: 22.830
-        zoom: 4
+        lat: -6.3
+        lon: 34.85
+        zoom: 9
+
                     ## the first zoom_to should always match basemap.center
 
   - title: Transport and Energy
@@ -48,6 +59,11 @@ report:
   - title: Logging
     text: Preventing illegal and unsustainable logging will prove challenging for REDD+ projects. The study identified nine logging permits and thirty-two artisanal logging licenses currently overlapping REDD+ pilot projects. A recent study estimated that up to 90% of logging in DRC is <a href="http://news.mongabay.com/2014/0408-hance-drc-illegal-logging.html">illegal</a>.  Weak forest governance institutions remains the primary cause as well as demand from a growing domestic population and export markets, principally China. Preventing illegal loggers from entering REDD+ conservation areas to log valuable species will be costly.
     layers: [moabi_redd_projects, moabi_logging]
+    oo_iframe:
+      opacity: 0.9
+#    oo_html:
+#      opacity: 0.2
+             
     zoom_to:
         lat: 0.9
         lon: 24.1
