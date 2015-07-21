@@ -23,7 +23,7 @@ basemap:
     center:
         lat: -6.3
         lon: 34.85
-        zoom: 8
+        zoom: 4
     layers:
       - id: moabi_base
         z: -1
@@ -35,8 +35,8 @@ report:
 
 
 
-  - title: Competition for resources threatens REDD+ in DRC
-    text: A recent study by the Moabi DRC initiative has identified 6 existing and proposed land uses that could compete with REDD+ pilot project activities. New infrastructure, extractive industries, and industrial agriculture could cause forest loss that is not currently considered within reference emission levels. Many proposed activities are speculative, but over the thirty year life span of REDD+ projects, many could result in deforestation.
+  - title: First page
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     layers: [moabi_redd_projects]
                     ## first slide's layers property should always be empty.
                     ## any empty layers property should be not be assigned anything, rather than being assigned '[]'
@@ -44,68 +44,49 @@ report:
     zoom_to:
         lat: -6.3
         lon: 34.85
-        zoom: 9
+        zoom: 5
 
                     ## the first zoom_to should always match basemap.center
 
-  - title: Transport and Energy
-    text: Roads and rivers provide the arteries for travel and trade across DRC. After decades of neglect, over twenty-five thousand kilometers of road are being rehabilitated including more than one thousand kilometers directly overlapping with REDD+ pilot projects.  Forest located within two kilometers of roads will be vulnerable to clearance and other impacts such as poaching will affect a far wider area. DRC government also plans to invest <a href="http://www.voanews.com/content/drc-plans-massive-investments-in-power-generation-agriculture/1769661.html">$50 billion</a> in electricity generation, particularly in hydropower and power transmission.
+  - title: Geo-body
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
     layers: [moabi_redd_projects, moabi_transport, moabi_transmission_lines, moabi_hydropower]
     zoom_to:
-        lat: -2.877
-        lon: 22.830
+        lat: -6.3
+        lon: 34.85
         zoom: 5
 
-  - title: Logging
-    text: Preventing illegal and unsustainable logging will prove challenging for REDD+ projects. The study identified nine logging permits and thirty-two artisanal logging licenses currently overlapping REDD+ pilot projects. A recent study estimated that up to 90% of logging in DRC is <a href="http://news.mongabay.com/2014/0408-hance-drc-illegal-logging.html">illegal</a>.  Weak forest governance institutions remains the primary cause as well as demand from a growing domestic population and export markets, principally China. Preventing illegal loggers from entering REDD+ conservation areas to log valuable species will be costly.
+
+
+
+  - title: Model
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
     layers: [moabi_redd_projects, moabi_logging]
     oo_iframe:
-      opacity: 0.9
-#    oo_html:
-#      opacity: 0.2
+      opacity: 1
+      src: https://onedrive.live.com/embed?cid=10D81EE6AB894688&resid=10D81EE6AB894688%21120&authkey=AAPyW2m0w-NHnR4&em=2&AllowTyping=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True
              
     zoom_to:
         lat: 0.9
         lon: 24.1
         zoom: 8
 
-  - title: Industrial Agriculture
-    text: Growing demand for commodities such as palm oil will put pressure on forests including within REDD+ project areas. The DRC government plans to reactivate historical agricultural concessions that were abandoned during the many years of conflict. Using a map from the Geographic Institute of Congo and provided by the World Resources Institute (hyperlink WRI Congo Program) and DRC Ministry of Environment, the Moabi team has digitized a map of the historical concession locations. The information is incomplete and needs groundtruthing, but it provides an indication of where industrial agriculture could expand.
+  - title: Acacia Corporate Map
+    text: ...
     layers: [moabi_redd_projects, moabi_palm]
     zoom_to:
         lat: 0.4
         lon: 23.95
         zoom: 9
+    oo_iframe:
+      opacity: 1
+      src: https://data.openoil.net/#nigeria_production
 
-  - title: Mining
-    text: Global demand for minerals such as copper, iron, and cobalt are abundant in DRC with mining permits cover over 18% of the DRC’s total land area including over eight thousand square kilometers directly overlapping REDD+ projects.  Mining requires new transport and energy infrastructure, large migrations of workers in remote regions, and changing land values. Predicting which permits will become active mines depends upon many factors including market demand, the size and quality of the deposit, and the ease of extracting and transporting minerals to market. But any mine permitted in or near a REDD+ project than becomes active could dramatically increase the value of land and outcompete carbon prices.
+  - title: Tanzania Corporate Map
+    text: ...
     layers: [moabi_redd_projects, moabi_mining]
     zoom_to:
         lat: -2.877
         lon: 22.830
         zoom: 6
-
-  - title: Oil and Gas
-    text: Oil and Gas blocks have also been granted across 42% of DRC’s forest area and overlapping six REDD+ pilot projects. Nascent exploration activities have begun but locations of likely exploitation and their impacts remain largely unknown. The DRC government approved oil exploration inside <a href="http://wwf.panda.org/what_we_do/where_we_work/congo_basin_forests/problems/oil_extraction/virunga_under_threat/">Virunga National Park</a> – home of one of the last remaining populations of mountain gorillas. Block V – owned by Soco International - overlaps with both Virunga and the WWF EcoMakala project. The decision remains controversial and could set a precedent for REDD+ projects.
-    layers: [moabi_redd_projects, moabi_oil]
-    zoom_to:
-        lat: -1
-        lon: 29.3
-        zoom: 8
-
-  - title: Indigenous Territories
-    text: At least four REDD+ projects overlap with indigenous territories, which makes their free, prior, and informed consent to these activities critical. REDD+ as well as other proposed land uses overlap with customary rights of local communities and could impede their access and use of the forest. Pygmy communities, in particular, are increasingly vulnerable to illegal loggers, artisanal miners, and slash and burn agriculture. Their customary rights are not recognized under DRC law and few of their customary rights have been mapped. Rainforest Foundation UK and the Forest Peoples Program are working in partnership with DRC civil society to map community land rights and potential conflicts with REDD+ project areas.
-    layers: [moabi_redd_projects, moabi_indigenous]
-    zoom_to:
-        lat: -2.877
-        lon: 22.830
-        zoom: 6
-
-  - title: Find Out More
-    text: For more information, download a wall map and the full report. If you are interested in obtaining a hardcopy of the wall map or report, <a href="mailto:info@crowdcover.org" taget="_blank">please contact us</a>.
-    layers: [moabi_redd_projects]
-    zoom_to:
-        lat: -2.877
-        lon: 22.830
-        zoom: 5
 ---

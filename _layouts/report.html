@@ -39,6 +39,9 @@ hide: [footer]
 
 			 {% if reportpage.oo_iframe.opacity %}data-oo_iframe-opacity="{{reportpage.oo_iframe.opacity}}"{%endif%}
 
+			 {% if reportpage.oo_iframe.src %}data-oo_iframe-src="{{reportpage.oo_iframe.src}}"{%endif%}
+
+			 
 			 >
                     <h2 class="prose serif keyline-bottom" style="margin-bottom:10px">{{reportpage.title}}</h2>
                     {% if forloop.first and page.author %}

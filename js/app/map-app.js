@@ -1,5 +1,13 @@
 ---
 ---
+
+OO_LAYERS = {
+    'Protected Areas': 'openoil.mnn67a0f',
+    'Active PML Licenses': 'openoil.mnn3hpd1',
+    'Oil Blocks': 'openoil.mk6fila7',
+}
+
+
 // map module
 define(['app/main-app', 'mapbox', 'leafletImage', 'leafletHash', 'jquery', 'jquery-sortable'],
 function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
@@ -19,18 +27,34 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
     },
 
     buildMap: function(){
-      var baseLayer = L.tileLayer('http://tiles.osm.moabi.org/'+ pageConfig.baseLayer.id +'/{z}/{x}/{y}.png');
+     // var baseLayer = L.tileLayer('http://tiles.osm.moabi.org/'+ pageConfig.baseLayer.id +'/{z}/{x}/{y}.png');
 
-      L.mapbox.accessToken = 'pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA';
-      this.map = L.mapbox.map('map', undefined, {
-        layers: baseLayer,
+	//L.mapbox.accessToken = 'pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA';
+	L.mapbox.accessToken = 'pk.eyJ1Ijoib3Blbm9pbCIsImEiOiJVbzF0dUtjIn0.0PfhXizZ9_e1nLH1Dgye9A';
+
+	var baseLayer = L.mapbox.tileLayer(OO_LAYERS['Oil Blocks']);
+
+	this.map = L.mapbox.map('map',
+				OO_LAYERS['Protected Areas'],
+				{
+        //layers: baseLayer,
         center: pageConfig.baseLayer.latlon,
         zoom: pageConfig.baseLayer.zoom,
         scrollWheelZoom: false,
         minZoom: 4,
         maxZoom: 18
-      });
+	});
 
+	layername = 'Protected Areas';
+	that = this;
+	$.each(OO_LAYERS, function(i,v){
+	    console.log(i,v);
+	    newlayer = L.mapbox.featureLayer(v);
+	    newlayer.setZIndex(1).addTo(that.map);
+	});
+
+
+	
       // add additional object to map object to store references to layers
         // set baselayer z-index to -1, while you're at it
       this.map.moabiLayers = {
@@ -42,7 +66,7 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
       L.control.scale().addTo(this.map);
       moabi.leaflet_hash = L.hash(this.map);
 
-      this.map.legendControl.addLegend('<h3 class="center keyline-bottom">Legend</h3><div class="legend-contents"></div>');
+      //this.map.legendControl.addLegend('<h3 class="center keyline-bottom">Legend</h3><div class="legend-contents"></div>');
 
       moabi.leaflet_hash.on('update', moabi.getLayerHash);
       moabi.leaflet_hash.on('change', moabi.setLayerHash);
@@ -80,11 +104,15 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
 
     changeLayer: function(mapId){
       // initiate everything that should happen when a map layer is added/removed
+	//return; //
+	console.log('changeLayer: add ' + mapId);
 
-      // cache tileLayer in moabi.map.moabiLayers.dataLayers[mapId]
+	// cache tileLayer in moabi.map.moabiLayers.dataLayers[mapId]
+      
       if(! moabi.map.moabiLayers.dataLayers[mapId]){
         moabi.map.moabiLayers.dataLayers[mapId] = {
-          tileLayer: L.tileLayer('http://tiles.osm.moabi.org/' + mapId + '/{z}/{x}/{y}.png')
+          //tileLayer: L.tileLayer('http://tiles.osm.moabi.org/' + mapId + '/{z}/{x}/{y}.png')
+	    tileLayer: L.tileLayer(mapId)
         };
       }
       var tileLayer = this.map.moabiLayers.dataLayers[mapId].tileLayer;

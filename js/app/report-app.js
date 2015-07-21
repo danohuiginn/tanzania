@@ -3,6 +3,9 @@
 var openoil_set_layers = function($this){
     iframe_opacity = $this.data('oo_iframe-opacity') || 0;
     html_opacity = $this.data('oo_html_opacity') || 0;
+    if($this.data('oo_iframe-src')){
+	$('#openoil_map_overlay_iframe iframe').attr('src', $this.data('oo_iframe-src'));
+    }
     $('#openoil_map_overlay_iframe').css('opacity', iframe_opacity);
     $('#openoil_map_overlay_localcontent').css('opacity', html_opacity);
 }
