@@ -41,7 +41,8 @@ define(['app/map-app', 'waypoints'], function (moabi, waypoints) {
       if(nav){
           moabi.map.setView([nav[0], nav[1]], nav[2]);
       }
-      // change Layers
+	// change Layers
+	/*
       moabi.removeAllExcept(newLayers);
       if(newLayers){
         // perform a quick lookup to test if newLayers is already displayed
@@ -53,7 +54,7 @@ define(['app/map-app', 'waypoints'], function (moabi, waypoints) {
             moabi.changeLayer(newLayers[i]);
           }
         }
-      }
+      }*/
     },
 
     navigate: function(e) {

@@ -1,10 +1,13 @@
 ---
 ---
 
+BASELAYER = 'openoil.mnijpjfk' // 'Tanzania Regions'
 OO_LAYERS = {
     'Protected Areas': 'openoil.mnn67a0f',
-    'Active PML Licenses': 'openoil.mnn3hpd1',
-    'Oil Blocks': 'openoil.mk6fila7',
+    //'Active PML Licenses': 'openoil.mnn3hpd1',
+    'Application PML Licenses': 'openoil.mnn2ofh1',
+    'Active ML Licenses': 'openoil.mnn06d6p',
+    'Oil Blocks': 'openoil.mk6fila7',  
 }
 
 
@@ -15,15 +18,15 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
     initMap: function(){
       moabi.initMain();
       moabi.buildMap();
-      $('.layer-ui li.layer-toggle').on('click', 'a', this.layerButtonClick);
-      $('.sortable').sortable({
+      //$('.layer-ui li.layer-toggle').on('click', 'a', this.layerButtonClick);
+      /*$('.sortable').sortable({
         placeholder: "ui-state-highlight",
         helper: 'clone',
         update: this.layerSortedUpdate
       });
       $('.slider').on('click', 'a', this.slidePanel);
       $('#snap').on('click', this.mapCapture);
-      $('.page-fade-link').on('click', this.fade2Page);
+      $('.page-fade-link').on('click', this.fade2Page);*/
     },
 
     buildMap: function(){
@@ -32,38 +35,63 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
 	//L.mapbox.accessToken = 'pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA';
 	L.mapbox.accessToken = 'pk.eyJ1Ijoib3Blbm9pbCIsImEiOiJVbzF0dUtjIn0.0PfhXizZ9_e1nLH1Dgye9A';
 
-	var baseLayer = L.mapbox.tileLayer(OO_LAYERS['Oil Blocks']);
+	var baseLayer = L.mapbox.tileLayer(BASELAYER);
 
 	this.map = L.mapbox.map('map',
-				OO_LAYERS['Protected Areas'],
+				BASELAYER,
 				{
         //layers: baseLayer,
         center: pageConfig.baseLayer.latlon,
         zoom: pageConfig.baseLayer.zoom,
         scrollWheelZoom: false,
-        minZoom: 4,
+        minZoom: 1,
         maxZoom: 18
 	});
 
 	layername = 'Protected Areas';
-	that = this;
+	var theMap = this.map;
+	var layers = document.getElementById('menu-ui');
+	var LAYERMAP = {};
 	$.each(OO_LAYERS, function(i,v){
-	    console.log(i,v);
-	    newlayer = L.mapbox.featureLayer(v);
-	    newlayer.setZIndex(1).addTo(that.map);
+	    LAYERMAP[i] = L.mapbox.featureLayer(v);
+	    //newlayer.setZIndex(1).addTo(theMap);
+
+	    // create layer toggle
+	    var link = document.createElement('a');
+            link.href = '#';
+            link.className = '';
+            link.innerHTML = i;
+
+	    link.onclick = function(e) {
+		e.preventDefault();
+		e.stopPropagation();
+
+		if (theMap.hasLayer(LAYERMAP[i])) {
+		    theMap.removeLayer(LAYERMAP[i]);
+		    this.className = '';
+		} else {
+		    //newlayer.addTo(theMap);
+		    theMap.addLayer(LAYERMAP[i]);
+		    this.className = 'active';
+		}
+	    };
+	    layers.appendChild(link);
+	    link.click();
+
 	});
 
 
 	
       // add additional object to map object to store references to layers
         // set baselayer z-index to -1, while you're at it
-      this.map.moabiLayers = {
+      /*this.map.moabiLayers = {
         baseLayer: baseLayer.setZIndex(-1),
         dataLayers: {}
-      };
+      };*/
 
       this.map.zoomControl.setPosition('topleft');
-      L.control.scale().addTo(this.map);
+	L.control.scale().addTo(this.map);
+	/*
       moabi.leaflet_hash = L.hash(this.map);
 
       //this.map.legendControl.addLegend('<h3 class="center keyline-bottom">Legend</h3><div class="legend-contents"></div>');
@@ -71,16 +99,16 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
       moabi.leaflet_hash.on('update', moabi.getLayerHash);
       moabi.leaflet_hash.on('change', moabi.setLayerHash);
       moabi.leaflet_hash.on('hash', moabi.updateExportLink);
-      moabi.updateExportLink(location.hash);
+      moabi.updateExportLink(location.hash);*/
     },
 
-    layerButtonClick: function(e){
+    /*layerButtonClick: function(e){
       e.preventDefault();
       e.stopPropagation();
 
       moabi.changeLayer($(this).parent('li').data('id'));
-    },
-
+    },*/
+/*
     layerSortedUpdate: function(e, ui){
       var displayedButtonContainer = $(this),
           layers = moabi.getLayers(),
@@ -104,7 +132,7 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
 
     changeLayer: function(mapId){
       // initiate everything that should happen when a map layer is added/removed
-	//return; //
+	return; 
 	console.log('changeLayer: add ' + mapId);
 
 	// cache tileLayer in moabi.map.moabiLayers.dataLayers[mapId]
@@ -418,8 +446,8 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
       if (! found) { vars.push(  key + "=" + value ); }
       return(vars.join("&"));
     },
-
-    mapCapture: function(e) {
+*/
+/*    mapCapture: function(e) {
       e.preventDefault();
       e.stopPropagation();
 
@@ -434,8 +462,8 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
         $imgContainer.children('img').remove();
         $imgContainer.append(mapCapture);
       });
-    },
-
+    },*/
+/*
     slidePanel: function(e) {
       var $this = $(this),
           tabgroup = $this.parents('.tab-group'),
@@ -456,7 +484,7 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
       $('body').fadeOut(500, function(){
           window.location = newPage;
       });
-    }
+    }*/
 
   });
   return moabi;
