@@ -7,9 +7,11 @@ categories:
   - en
 defaults:
   oo_iframe:
-    opacity: 0.811
+    opacity: 0
   oo_html:
-    opacity: 0.811
+    opacity: 0
+  oo_map:
+    opacity: 1
 
 
 
@@ -45,7 +47,6 @@ report:
         lat: -6.3
         lon: 34.85
         zoom: 6
-
                     ## the first zoom_to should always match basemap.center
 
   - title: Geo-body
@@ -55,7 +56,6 @@ report:
         lat: -3.232727,
         lon: 32.486283
         zoom: 13
-
         
 
 
@@ -76,14 +76,14 @@ report:
   - title: Acacia Corporate Map
     text: ...
     layers: [moabi_redd_projects, moabi_palm]
-    zoom_to:
+    zoom_to: 
         lat: 0.4
         lon: 23.95
         zoom: 9
     oo_iframe:
       opacity: 1
       src: https://data.openoil.net/#nigeria_production
-
+      
   - title: Tanzania Corporate Map
     text: ...
     layers: [moabi_redd_projects, moabi_mining]
@@ -91,4 +91,7 @@ report:
         lat: -2.877
         lon: 22.830
         zoom: 6
+    oo_iframe:
+      opacity: 1
+      src: https://data.openoil.net/#nigeria_production
 ---

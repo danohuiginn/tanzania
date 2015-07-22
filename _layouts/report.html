@@ -36,9 +36,24 @@ hide: [footer]
                 <section class="animate {%if forloop.first%}active{%endif%}"
                 data-index="{{forloop.index}}"
                 {% if reportpage.zoom_to %} data-nav='["{{reportpage.zoom_to.lat}}", "{{reportpage.zoom_to.lon}}", "{{reportpage.zoom_to.zoom}}"]'{% endif %}
-                {% if reportpage.layers %} data-id='[{% for layer in reportpage.layers %}"{{layer}}"{% unless forloop.last %} ,{% endunless %}{% endfor %}]'{% endif %}
+			 {% if reportpage.layers %} data-id='[{% for layer in reportpage.layers %}"{{layer}}"{% unless forloop.last %} ,{% endunless %}{% endfor %}]'{% endif %}
+
+			 {% if reportpage.oo_iframe.opacity == 1 %}
+			 data-visible_layer="oo_iframe"
+			 {% else %}
+			 data-visible_layer="oo_map"
+			 {% endif %}
+			 
+
+
+			 
+			 {% if reportpage.visible_layer %}
+			 data-visible_layer="{{ reportpage.visible_layer }}"
+			 {% endif %}
 
 			 {% if reportpage.oo_iframe.opacity %}data-oo_iframe-opacity="{{reportpage.oo_iframe.opacity}}"{%endif%}
+
+			 
 
 			 {% if reportpage.oo_iframe.src %}data-oo_iframe-src="{{reportpage.oo_iframe.src}}"{%endif%}
 

@@ -7,7 +7,8 @@ OO_LAYERS = {
     //'Active PML Licenses': 'openoil.mnn3hpd1',
     'Application PML Licenses': 'openoil.mnn2ofh1',
     'Active ML Licenses': 'openoil.mnn06d6p',
-    'Oil Blocks': 'openoil.mk6fila7',  
+    'Oil Blocks': 'openoil.mk6fila7',
+    'New Style2': 'openoil.mpfced36',
 }
 
 
@@ -43,7 +44,7 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
         //layers: baseLayer,
         center: pageConfig.baseLayer.latlon,
         zoom: pageConfig.baseLayer.zoom,
-        scrollWheelZoom: false,
+        //scrollWheelZoom: false,
         minZoom: 1,
         maxZoom: 18
 	});
