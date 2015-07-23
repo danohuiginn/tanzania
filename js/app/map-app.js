@@ -9,6 +9,7 @@ OO_LAYERS = {
     'Active ML Licenses': 'openoil.mnn06d6p',
     'Oil Blocks': 'openoil.mk6fila7',
     'New Style2': 'openoil.mpfced36',
+    'Mines': 'openoil.mplgb1ai',
 }
 
 
