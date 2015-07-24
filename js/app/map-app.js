@@ -1,16 +1,45 @@
 ---
 ---
-
+LAYERMAP = {};
 BASELAYER = 'openoil.mnijpjfk' // 'Tanzania Regions'
-OO_LAYERS = {
+OO_LAYERS_OUTER = {
     'Protected Areas': 'openoil.mnn67a0f',
     //'Active PML Licenses': 'openoil.mnn3hpd1',
     'Application PML Licenses': 'openoil.mnn2ofh1',
     'Active ML Licenses': 'openoil.mnn06d6p',
     'Oil Blocks': 'openoil.mk6fila7',
-    'New Style2': 'openoil.mpfced36',
     'Mines': 'openoil.mplgb1ai',
+    'Combined': 'openoil.n039d5f1',
+//}
+
+//OO_LAYERS_BULYANHULU = {
+    'Land Use': 'openoil.n04fad5c',
+    'Forests': 'openoil.n04f46p0',
+    'Regions': 'openoil.n04epaki',
+    'Admin': 'openoil.n04e8k7i',}
+
+OO_LAYERS = OO_LAYERS_OUTER;
+
+OO_LAYERCOLORS = {
+    'Protected Areas': '#015C61',
+    //'Active PML Licenses': 'openoil.mnn3hpd1',
+    'Application PML Licenses': '#CADFD0',
+    'Active ML Licenses': '#EBE1D7',
+    'Oil Blocks': '#F0A5A0',
+    'Mines': '#BE797E',
+    'Combined': '#444444',
+    //
+
+
+    // Bulyanhulu needs its own color scheme
+    'Land Use': '#015C61',
+    'Forests': '#CADFD0',
+    'Regions': '#EBE1D7',
+    'Admin': '#F0A5A0',
 }
+
+
+
 
 
 // map module
@@ -53,9 +82,28 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
 	layername = 'Protected Areas';
 	var theMap = this.map;
 	var layers = document.getElementById('menu-ui');
-	var LAYERMAP = {};
+
+
+	var fix_html = function(html){
+	    console.log('sanitizing');
+	    return 'this is not a table';
+	}
+
+
 	$.each(OO_LAYERS, function(i,v){
-	    LAYERMAP[i] = L.mapbox.featureLayer(v);
+	    console.log('layermap');
+	    LAYERMAP[i] = L.mapbox.featureLayer(v, {
+	    });
+	    $(document).ready(function(){
+		$('.menu-ui a').click();
+		$('.menu-ui a').click();
+	    });
+
+
+	    //$('path').attr('stroke', OO_LAYERCOLORS[i]);
+	    //console.log(OO_LAYERCOLORS[i]);
+
+	    //$('path').attr('stroke', '#ff0000')
 	    //newlayer.setZIndex(1).addTo(theMap);
 
 	    // create layer toggle
@@ -63,6 +111,7 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
             link.href = '#';
             link.className = '';
             link.innerHTML = i;
+	    $(link).css('background', OO_LAYERCOLORS[i]);
 
 	    link.onclick = function(e) {
 		e.preventDefault();
@@ -74,6 +123,10 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
 		} else {
 		    //newlayer.addTo(theMap);
 		    theMap.addLayer(LAYERMAP[i]);
+		    
+		    LAYERMAP[i].setStyle({
+		'color': OO_LAYERCOLORS[i]});
+
 		    this.className = 'active';
 		}
 	    };
@@ -81,7 +134,6 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
 	    link.click();
 
 	});
-
 
 	
       // add additional object to map object to store references to layers
@@ -489,5 +541,8 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
     }*/
 
   });
+
   return moabi;
 });
+
+

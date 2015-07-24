@@ -103,5 +103,8 @@ define(['app/map-app', 'waypoints'], function (moabi, waypoints) {
     }
 
   });
+    
   return moabi;
 });
+
+
