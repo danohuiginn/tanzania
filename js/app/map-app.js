@@ -25,7 +25,7 @@ OO_LAYERCOLORS = {
     //'Active PML Licenses': 'openoil.mnn3hpd1',
     'Application PML Licenses': '#CADFD0',
     'Active ML Licenses': '#EBE1D7',
-    'Oil Blocks': '#F0A5A0',
+    'Oil Blocks': '#444444',
     'Mines': '#BE797E',
     'Combined': '#444444',
     //
