@@ -21,12 +21,13 @@ OO_LAYERS_OUTER = {
 OO_LAYERS = OO_LAYERS_OUTER;
 
 OO_LAYERCOLORS = {
-    'Protected Areas': '#015C61',
+    'Protected Areas': '#CCD6CC',
     //'Active PML Licenses': 'openoil.mnn3hpd1',
-    'Application PML Licenses': '#CADFD0',
-    'Active ML Licenses': '#EBE1D7',
+    'Application PML Licenses': '#6699FF',
+    'Active ML Licenses': '#3D5C99',
     'Mines': '#BE797E',
-    'Selected areas': '#444444',
+    'Oil Blocks': '#293D66',
+    'Selected areas': '#141F33',
     //
 
 
