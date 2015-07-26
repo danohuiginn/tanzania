@@ -8,8 +8,8 @@ OO_LAYERS_OUTER = {
     'Application PML Licenses': 'openoil.mnn2ofh1',
     'Active ML Licenses': 'openoil.mnn06d6p',
     'Oil Blocks': 'openoil.mk6fila7',
-    'Mines': 'openoil.mplgb1ai',
-    'Selected areas': 'openoil.n0kd050j',
+    'Available Contractual Information': 'openoil.n0lhjbfl',
+    'Selected Areas': 'openoil.n0kd050j',
 //}
 
 //OO_LAYERS_BULYANHULU = {
@@ -25,9 +25,9 @@ OO_LAYERCOLORS = {
     //'Active PML Licenses': 'openoil.mnn3hpd1',
     'Application PML Licenses': '#6699FF',
     'Active ML Licenses': '#3D5C99',
-    'Mines': '#BE797E',
+    'Available Contractual Information': '#BE797E',
     'Oil Blocks': '#293D66',
-    'Selected areas': '#141F33',
+    'Selected Areas': '#141F33',
     //
 
 
