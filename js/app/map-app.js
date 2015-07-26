@@ -9,7 +9,7 @@ OO_LAYERS_OUTER = {
     'Active ML Licenses': 'openoil.mnn06d6p',
     'Oil Blocks': 'openoil.mk6fila7',
     'Mines': 'openoil.mplgb1ai',
-    'Selected areas': 'openoil.n05b19f3',
+    'Selected areas': 'openoil.n0kd050j',
 //}
 
 //OO_LAYERS_BULYANHULU = {
