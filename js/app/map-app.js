@@ -71,6 +71,11 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
       $('.page-fade-link').on('click', this.fade2Page);*/
     },
 
+      setLayers: function(layers){
+	  console.log('setting all layers to');
+	  console.log(layers);
+      },
+
     buildMap: function(){
      // var baseLayer = L.tileLayer('http://tiles.osm.moabi.org/'+ pageConfig.baseLayer.id +'/{z}/{x}/{y}.png');
 
