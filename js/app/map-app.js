@@ -43,16 +43,16 @@ OO_LAYERCOLORS = {
 
 OO_LAYERSTYLES = {
     'Available Contractual Information': {
-	'color': '#FF6666',
-	'fillColor': '#FFC2C2',
+	'color': '#008080',
+	'fillColor': '#66FFFF',
 	'fillOpacity': 0.5},
     'Production, Reserves, Costs Data': {
-	'color': '#FFC2C2',
-	'fillColor': '#CADFD0',
+	'color': '#006680',
+	'fillColor': '#00CCFF',
 	'fillOpacity': 0.5},
     'Oil Blocks': {
-	'color': '#FFCC66',
-	'fillColor': '#FFE0A3',
+	'color': '#4C8066',
+	'fillColor': '#ADFFD6',
 	'fillOpacity': 0.5},
     'Selected Areas': {},
 }
