@@ -2,6 +2,8 @@
 ---
 LAYERMAP = {};
 BASELAYER = 'openoil.mnijpjfk' // 'Tanzania Regions'
+//BASELAYER = 'openoil.n0p2o2n7' // with style
+BASELAYER = 'openoil.n0p9n71e' // satellite
 OO_LAYERS_OUTER = {
     'Protected Areas': 'openoil.mnn67a0f',
     //'Active PML Licenses': 'openoil.mnn3hpd1',
@@ -10,6 +12,7 @@ OO_LAYERS_OUTER = {
     'Oil Blocks': 'openoil.n0p81j5h',
     'Available Contractual Information': 'openoil.n0lhjbfl',
     'Selected Areas': 'openoil.n0kd050j',
+
 //}
 
 //OO_LAYERS_BULYANHULU = {
@@ -20,6 +23,7 @@ OO_LAYERS_OUTER = {
 
 OO_LAYERS = OO_LAYERS_OUTER;
 
+/*
 OO_LAYERCOLORS = {
     'Protected Areas': '#CCD6CC',
     //'Active PML Licenses': 'openoil.mnn3hpd1',
@@ -36,6 +40,14 @@ OO_LAYERCOLORS = {
     'Forests': '#CADFD0',
     'Regions': '#EBE1D7',
     'Admin': '#F0A5A0',
+}*/
+
+OO_LAYERSTYLES = {
+    'Oil Blocks': {
+	'color': '#293D66',
+	'fillColor': '#CADFD0',
+	'fillOpacity': 0.5},
+    'Selected Areas': {},
 }
 
 
@@ -92,6 +104,9 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
 
 	$.each(OO_LAYERS, function(i,v){
 	    console.log('layermap');
+	    //LAYERMAP[i] = L.mapbox.featureLayer(v, {
+	    //});
+
 	    LAYERMAP[i] = L.mapbox.featureLayer(v, {
 	    });
 	    $(document).ready(function(){
@@ -122,17 +137,17 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
 		    this.className = '';
 		} else {
 		    //newlayer.addTo(theMap);
-		    theMap.addLayer(LAYERMAP[i]);
+	
+		    style = OO_LAYERSTYLES[i] || {}
 		    
-		    //LAYERMAP[i].setStyle({
-		    //'color': OO_LAYERCOLORS[i]});
+		    LAYERMAP[i].setStyle(style);
+		    theMap.addLayer(LAYERMAP[i]);
 
 		    this.className = 'active';
 		}
 	    };
 	    layers.appendChild(link);
 	    link.click();
-
 	});
 
 	
