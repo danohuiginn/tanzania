@@ -73,7 +73,7 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
 
       setLayers: function(selected, available){	      
 	  
-	var build_legend = function(linknames){
+	  var build_legend = function(linknames, selected){
 	    var menu_ui = document.getElementById('menu-ui');
 	    $(menu_ui).html('');
 	    $.each(linknames, function(idx){
@@ -107,7 +107,10 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
 		menu_ui.appendChild(link);
 		link.click();
 		link.click();
-		link.click();
+		if(selected.indexOf(i) >= 0){
+		    console.log('selecting ' + i);
+		    link.click();
+		}
 	    });
 	};
 
@@ -135,7 +138,7 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
 	  $.each(layers, function(i,v){
 	    install_layer(i,v, true);
 	});
-	build_legend(Object.keys(layers));
+	  build_legend(Object.keys(layers), selected);
 
       },
 
