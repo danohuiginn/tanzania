@@ -71,9 +71,72 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
       $('.page-fade-link').on('click', this.fade2Page);*/
     },
 
-      setLayers: function(layers){
-	  console.log('setting all layers to');
-	  console.log(layers);
+      setLayers: function(layernames){
+	  var theMap = this.map;
+	  console.log('layernames are' + layernames);
+	  //layers = OO_LAYERS;
+	  layers = {};
+	  $.each(layernames, function(i){
+	      l = layernames[i];
+	      layers[l] = OO_LAYERS[l];
+	  });
+	  console.log('new layers are ' + layers);
+	      
+	  
+	var build_legend = function(linknames){
+	    var menu_ui = document.getElementById('menu-ui');
+	    $(menu_ui).html('');
+	    $.each(linknames, function(idx){
+		i = linknames[idx];
+		// create layer toggle
+		var link = document.createElement('a');
+		link.href = '#';
+		link.className = '';
+		link.innerHTML = i;
+		$(link).data('layername', i);
+		//$(link).css('background', OO_LAYERCOLORS[i]);
+
+		link.onclick = function(e) {
+		    i = $(this).data('layername')
+		    console.log('clicked legend for layer' + i);
+		    e.preventDefault();
+		    e.stopPropagation();
+
+		    if (theMap.hasLayer(LAYERMAP[i])) {
+			theMap.removeLayer(LAYERMAP[i]);
+			this.className = '';
+		    } else {
+			//newlayer.addTo(theMap);
+			style = OO_LAYERSTYLES[i] || {}	    
+			LAYERMAP[i].setStyle(style);
+			theMap.addLayer(LAYERMAP[i]);
+
+			this.className = 'active';
+		    }
+		};
+		menu_ui.appendChild(link);
+		link.click();
+		link.click();
+		link.click();
+	    });
+	};
+
+	var install_layer = function(i,v,active){
+	    if(!LAYERMAP[i]){
+		style = OO_LAYERSTYLES[i] || {}	    
+		//LAYERMAP[i] = L.mapbox.featureLayer(v, {});
+		LAYERMAP[i] = L.mapbox.featureLayer(v, {}).setStyle(style);
+	    };
+	    
+	}
+
+
+	  
+	  $.each(layers, function(i,v){
+	    install_layer(i,v, true);
+	});
+	build_legend(Object.keys(layers));
+
       },
 
     buildMap: function(){
@@ -96,64 +159,25 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
 	});
 
 	layername = 'Protected Areas';
-	var theMap = this.map;
-	var layers = document.getElementById('menu-ui');
+
+
 
 
 	var fix_html = function(html){
-	    console.log('sanitizing');
 	    return 'this is not a table';
 	}
 
 
-	$.each(OO_LAYERS, function(i,v){
-	    console.log('layermap');
-	    //LAYERMAP[i] = L.mapbox.featureLayer(v, {
-	    //});
-
-	    LAYERMAP[i] = L.mapbox.featureLayer(v, {
-	    });
-	    $(document).ready(function(){
-		$('.menu-ui a').click();
-		$('.menu-ui a').click();
-	    });
+	moabi.setLayers(OO_LAYERS);
 
 
-	    //$('path').attr('stroke', OO_LAYERCOLORS[i]);
-	    //console.log(OO_LAYERCOLORS[i]);
-
-	    //$('path').attr('stroke', '#ff0000')
-	    //newlayer.setZIndex(1).addTo(theMap);
-
-	    // create layer toggle
-	    var link = document.createElement('a');
-            link.href = '#';
-            link.className = '';
-            link.innerHTML = i;
-	    //$(link).css('background', OO_LAYERCOLORS[i]);
-
-	    link.onclick = function(e) {
-		e.preventDefault();
-		e.stopPropagation();
-
-		if (theMap.hasLayer(LAYERMAP[i])) {
-		    theMap.removeLayer(LAYERMAP[i]);
-		    this.className = '';
-		} else {
-		    //newlayer.addTo(theMap);
 	
-		    style = OO_LAYERSTYLES[i] || {}
-		    
-		    LAYERMAP[i].setStyle(style);
-		    theMap.addLayer(LAYERMAP[i]);
-
-		    this.className = 'active';
-		}
-	    };
-	    layers.appendChild(link);
-	    link.click();
-	});
-
+	window.setInterval(function(){
+	    $('.menu-ui a').click();
+	    $('.menu-ui a').click();
+	}, 1000);
+	
+	
 	
       // add additional object to map object to store references to layers
         // set baselayer z-index to -1, while you're at it

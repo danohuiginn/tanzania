@@ -41,7 +41,7 @@ report:
     text: >
       Each area is the co-ordinates of an oil or mining project. Those highlighted lead through to data on <strong><a href="http://repository.openoil.net/wiki/Main_Page">contracts</a></strong>, <strong>production</strong>, <strong>reserves</strong>, costs and <strong><a href="http://openoil.net/corporate-networks/">corporate groups</a></strong> involved. All data come from relatively authoritative sources: government or the companies.</p><p>BOXY BOX: Search... Contact us</p>
       <em>GENERAL: OpenOil's <a href="http://search.openoil.net/search">corporate filings database</a> <a href="https://opencorporates.com/">OpenCorporates</a> <a href="http://openoil.us9.list-manage.com/subscribe?u=f93dde4012236ea543f4c2c9d&id=41216014dd">open data services</a></em><p><p>
-    layers: [moabi_redd_projects]
+    layers: ["Oil Blocks", "Protected Areas", "Application PML Licenses"]
                     ## first slide's layers property should always be empty.
                     ## any empty layers property should be not be assigned anything, rather than being assigned '[]'
                     ## the way I have things configured, layers can only point to a layer that appears in layer-ui (defined below) (also, layer-ui must exist)
@@ -55,7 +55,7 @@ report:
     text: >
       Zooming in on one mine, Bulyanhulu, geodata set the footprint of mining activity against life in the region as a whole – land use, forests, administrative districts, protected areas. Communities can map their own environmental and social data layers, to create a richer picture of "total impact".
       COMMUNITY MAPPING<em><em>:</em> <a href="http://rdc.moabi.org/en/">Moabi</a> monitoring natural resource use in Congo, Community <a href="http://mapkibera.org/">mapping from Kibera</a>, Nairobi, <a href="http://www.openstreetmap.org/">OpenStreetMaps</a> <em><em> <a href="http://openoil.us9.list-manage.com/subscribe?u=f93dde4012236ea543f4c2c9d&id=41216014dd">open data services</a></em></em></em><p><p>
-    layers: [moabi_redd_projects, moabi_transport, moabi_transmission_lines, moabi_hydropower]
+    layers: ["Land use", "Regions"]
     oo_iframe:
       src: https://onedrive.live.com/embed?cid=10D81EE6AB894688&resid=10D81EE6AB894688%21120&authkey=AAPyW2m0w-NHnR4&em=2&wdAllowInteractivity=False&ActiveCell='Dashboard'!A1&wdHideGridlines=True&wdDownloadButton=True
       opacity: 0
@@ -70,7 +70,7 @@ report:
   - title: "Bulyanhulu: The Money"
     text: Switching from the physical frame to a financial one - an economic model of the Bulyanhulu gold mine. Based on the <strong><a href="http://openoil.net/contract-modeling/">public interest financial model</a></strong> approach, it shows past and future government and investor returns. A report examines <strong><a href="http://openoil.net/wp/wp-content/uploads/2014/09/tz_bulyanhulu_report_150726.pdf">why no income tax has been paid</a></strong> 13 years into production. <strong><a href="http://openoil.net/wp/wp-content/uploads/2014/09/BulyanhuluDocumentSummaries.pdf">Document summaries</a></strong> and <strong><a href="http://openoil.net/wp/wp-content/uploads/2014/09/Bulyanhulu-Mine-Documentation-Index.xls">an index</a></strong> archive the source for every piece of data or assumption in the model.
     MODELS<em>: Glencore in <a href="http://openoil.net/wp/wp-content/uploads/2014/09/Chad-Mangara-Glencore-Package-OpenOil.zip">Chad</a>, Tullow in <a href="https://www.globalwitness.org/reports/good-deal-better/">Uganda</a> <em><em> <a href="http://openoil.us9.list-manage.com/subscribe?u=f93dde4012236ea543f4c2c9d&id=41216014dd">open data services</a></em></em></em><p><p>
-    layers: [moabi_redd_projects, moabi_logging]
+    layers: ["Land use", "Regions"]
     oo_iframe:
       opacity: 1
       src: https://onedrive.live.com/embed?cid=10D81EE6AB894688&resid=10D81EE6AB894688%21120&authkey=AAPyW2m0w-NHnR4&em=2&wdAllowInteractivity=False&ActiveCell='Dashboard'!A1&wdHideGridlines=True&wdDownloadButton=True
@@ -83,7 +83,7 @@ report:
     text: >
       Zooming out along the financial axis, a corporate map illustrates how the operating company, Acacia Resources, is embedded in a network of subsidiaries and affiliates in Tanzania and elsewhere in Africa. The companies and connections in the graph map at one click onto source documents proving ownership and other links.<p><p>
       <em>CORE DATA: <a href="https://corporatearchive.s3.amazonaws.com/abg_uk_statutory.zip">Acacia Resources</a> (224 filings, 100 MB) <em><em> <a href="http://openoil.us9.list-manage.com/subscribe?u=f93dde4012236ea543f4c2c9d&id=41216014dd">open data services</a></em></em></em><p><p>
-    layers: [moabi_redd_projects, moabi_palm]
+    layers: ["Land use", "Regions"]
     zoom_to: 
         lat: 0.4
         lon: 23.95
@@ -96,7 +96,7 @@ report:
     text: >
       Corporate mapping can also be done at country level. Here there are 20 chains of subsidiaries and affiliates operating in Tanzania's oil and mining industries, similar to the one for Bulyanhulu. Connections and incorporation structures can give clues to issues like transfer mispricing and tax outcomes.<p><p>
       <em>MAPPING: <a href="http://openoil.net/mapping-bp-using-open-data-to-track-big-oil/">BP: mapping Big Oil using big data</a>, <a href="https://www.occrp.org/en">OCCRP</a>, <a href="http://followthemoney.net/">Follow the Money</a> <em> <a href="http://openoil.us9.list-manage.com/subscribe?u=f93dde4012236ea543f4c2c9d&id=41216014dd">open data services</a></em></em><p><p>
-    layers: [moabi_redd_projects, moabi_mining]
+    layers: ["Land use", "Regions"]
     zoom_to:
         lat: -2.877
         lon: 22.830
