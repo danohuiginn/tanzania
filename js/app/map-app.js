@@ -11,7 +11,7 @@ OO_LAYERS_OUTER = {
     'Active ML Licenses': 'openoil.n105eiib',
     'Oil Blocks': 'openoil.n0p81j5h',
     'Available Contractual Information': 'openoil.n10hp1a4',
-    'Reserves, Production, Costs Data': 'openoil.n10afcfi',
+    'Production, Reserves, Costs Data': 'openoil.n10afcfi',
 
 //}
 
