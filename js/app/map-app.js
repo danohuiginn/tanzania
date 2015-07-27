@@ -111,7 +111,7 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
             link.href = '#';
             link.className = '';
             link.innerHTML = i;
-	    $(link).css('background', OO_LAYERCOLORS[i]);
+	    //$(link).css('background', OO_LAYERCOLORS[i]);
 
 	    link.onclick = function(e) {
 		e.preventDefault();
@@ -124,8 +124,8 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
 		    //newlayer.addTo(theMap);
 		    theMap.addLayer(LAYERMAP[i]);
 		    
-		    LAYERMAP[i].setStyle({
-		'color': OO_LAYERCOLORS[i]});
+		    //LAYERMAP[i].setStyle({
+		    //'color': OO_LAYERCOLORS[i]});
 
 		    this.className = 'active';
 		}

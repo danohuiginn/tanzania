@@ -18,6 +18,20 @@
 
 /* this is used for conent loaded remotely over the map */
 #openoil_map_overlay_iframe {
+    position: relative;
+    top: 15px;
+    left: 15px;
+    right: 0;
+    background: #CCC;
+    z-index: 2;
+   /* height: 100px;
+    width: 100px;*/
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    padding: 0;
+}
+#openoil_map_overlay_iframe_bad {
     position: absolute;
     top: 0;
     left: 0;
@@ -29,10 +43,20 @@
     height: 100%;
     width: 100%;
     opacity: 0;
+    padding: 0;
 }
 #openoil_map_overlay_iframe iframe{
-    height: 100%;
-    width: 100%;
+    height: 133%;
+    width: 133%;
+
+
+    -ms-zoom: 0.75;
+    -moz-transform: scale(0.75);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.75);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.75);
+    -webkit-transform-origin: 0 0;
 }
 
 
