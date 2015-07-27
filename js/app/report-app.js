@@ -33,7 +33,9 @@ var openoil_set_layers = function($this){
    // $('#openoil_map_overlay_iframe').css('z-index', iframe_opacity * 10);
     $('#openoil_map_overlay_localcontent').css('opacity', html_opacity);
 
-    if($this.data('oo_iframe-src')){
+    if($this.data('oo_iframe-src') &&
+$('#openoil_map_overlay_iframe iframe').attr('src') != $this.data('oo_iframe-src')
+      ){
 	$('#openoil_map_overlay_iframe iframe').attr('src', $this.data('oo_iframe-src'));
     }
 
