@@ -7,7 +7,7 @@ OO_LAYERS_OUTER = {
     //'Active PML Licenses': 'openoil.mnn3hpd1',
     'Application PML Licenses': 'openoil.mnn2ofh1',
     'Active ML Licenses': 'openoil.mnn06d6p',
-    'Oil Blocks': 'openoil.mk6fila7',
+    'Oil Blocks': 'openoil.n0b27n11',
     'Available Contractual Information': 'openoil.n0lhjbfl',
     'Selected Areas': 'openoil.n0kd050j',
 //}
