@@ -1,0 +1,45 @@
+project,date,commodity,confidence,status,level,unit,net gross,source
+Block 2,30th June 2014,Gas,Unknown,Unspecified,20,Tcf,gross,https://www.sec.gov/Archives/edgar/data/1140625/000114062514000059/sto2q14_6k.pdf
+Block 2,30th March 2015,Gas,Unknown,Unspecified,22,Tcf,gross,http://www.statoil.com/en/NewsAndMedia/News/2015/Pages/30Mar_Tanzania.aspx
+Buckreef Prospect,5th June 2012,Gold,Measured & Indicated,Unspecified,1.3,million troy ounces,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Bulyanhulu Gold Mine,3rd October 2014,Gold,Proven & Probable,Unspecified,9.4,million troy ounces,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Buzwagi Gold Mine,3rd October 2014,Gold,Proven & Probable,Unspecified,1.1,million troy ounces,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Dutwa Nickel Project,1st March 2011,Nickel,Indicated,Unspecified,0.43,million tonnes,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Dutwa Nickel Project,1st March 2011,Cobalt,Indicated,Unspecified,9240,tonnes,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Geita Gold Mine,31st December 2013,Gold,Indicated,Unspecified,7.47,million troy ounces,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Handeni Gold,29th February 2012,Gold,Indicated,Unspecified,0.72,million ounces,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Imweru Gold Project,14th October 2014,Gold,Indicated,Unspecified,0.1,million troy ounces,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Kabanga Nickel Project,2nd August 2013,Nickel,Measured & Indicated,Unspecified,0.98,million tonnes,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Kiliwani North,14th May 2015,Gas,2C,Unspecified,28,Bcf,gross,http://www.londonstockexchange.com/exchange/news/market-news/market-news-detail/12351516.html
+Kiliwani North,14th May 2015,Gas,GIIP,Unspecified,44,Bcf,gross,http://www.londonstockexchange.com/exchange/news/market-news/market-news-detail/12351516.html
+Kito Prospect,12th December 2013,Gas,Low Estimate,Unspecified,48,MMstb,gross,http://www.swala-energy.com/documents/RISCITSR-KitoProspect%2012Dec2013FINAL.pdf
+Kito Prospect,12th December 2013,Gas,Best Estimate,Unspecified,151,MMstb,gross,http://www.swala-energy.com/documents/RISCITSR-KitoProspect%2012Dec2013FINAL.pdf
+Kito Prospect,12th December 2013,Gas,High Estimate,Unspecified,424,MMstb,gross,http://www.swala-energy.com/documents/RISCITSR-KitoProspect%2012Dec2013FINAL.pdf
+Liganga Iron Ore Project,19th September 2013,Iron Ore,Proven,Unspecified,219,million tonnes,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Liganga Iron Ore Project,19th September 2013,Titanium,Proven,Unspecified,175000,tonnes,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Liganga Iron Ore Project,19th September 2013,Vanadium,Proven,Unspecified,5000,tonnes,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Manyoni Uranium Project,1st June 2013,Uranium,Estimate,Unspecified,29,million tonnes,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Mchuchuma Coal Mine,19th January 2009,Coal,Proven,Unspecified,159,million tonnes,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Mkuju River Project,30th June 2013,Uranium,Measured & Indicated,Unspecified,124.6,million pounds,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Mnazi Bay,31st December 2014,Gas,1P,Unspecified,46.5,BOE (MMbbl),gross,http://www.wentworthresources.com/pdf/RPS-March-2-2014-Reserves-FINAL.pdf
+Mnazi Bay,31st December 2014,Gas,2P,Unspecified,73.8,BOE (MMbbl),gross,http://www.wentworthresources.com/pdf/RPS-March-2-2014-Reserves-FINAL.pdf
+Mnazi Bay,31st December 2014,Gas,3P,Unspecified,118.2,BOE (MMbbl),gross,http://www.wentworthresources.com/pdf/RPS-March-2-2014-Reserves-FINAL.pdf
+New Luika Gold Mine,16th January 2014,Gold,Indicated,Unspecified,0.69,million troy ounces,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Ngaka Coal Project,1st December 2012,Coal,Measured & Indicated,Unspecified,167,million tonnes,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Ngualla Rare Earth Project,6th March 2013,Rare Earth Oxides,Measured & Indicated,Unspecified,1.28,million tonnes,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+North Mara Gold Mine,3rd October 2014,Gold,Proven & Probable,Unspecified,2.2,million troy ounces,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Ntaka Hill Nickel Sulphide Project,3rd October 2014,Nickel,Measured & Indicated,Unspecified,0.12,million tonnes,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Nyanzaga Gold Project,3rd October 2014,Gold,Indicated,Unspecified,4.1,million troy ounces,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Panda Hill Niobium Project,12th August 2014,Niobium,Indicated & Inferred,Unspecified,0.423,million tonnes,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Rukwa Coal Mine Project,10th September 2014,Coal,Mineable,Unspecified,60,million tonnes,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Ruvuma,14th May 2015,Gas,2C,Unspecified,70,Bcf,gross,http://www.londonstockexchange.com/exchange/news/market-news/market-news-detail/12351516.html
+Ruvuma,14th May 2015,Gas,GIIP,Unspecified,4.17,Tcf,gross,http://www.londonstockexchange.com/exchange/news/market-news/market-news-detail/12351516.html
+Singida Gold Mining Project,29th January 2014,Gold,Measured & Indicated,Unspecified,0.55,million troy ounces,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Songo Songo,31st December 2014,Gas,1P,Unspecified,649.3,Bcf,gross,http://www.sedar.com/GetFile.do?lang=EN&docClass=2&issuerNo=00021084&fileName=/csfsprod/data151/filings/02346548/00000001/z%3A%5CSEDAR%5CLPC%5C060922%5C0002%5C2015YE%5CAnnualReport.pdf
+Songo Songo,31st December 2014,Gas,2P,Unspecified,118.4,Bcf,gross,http://www.sedar.com/GetFile.do?lang=EN&docClass=2&issuerNo=00021084&fileName=/csfsprod/data151/filings/02346548/00000001/z%3A%5CSEDAR%5CLPC%5C060922%5C0002%5C2015YE%5CAnnualReport.pdf
+Songo Songo,31st December 2013,Gas,1P,Unspecified,635.8,Bcf,gross,http://www.sedar.com/GetFile.do?lang=EN&docClass=2&issuerNo=00021084&fileName=/csfsprod/data151/filings/02346548/00000001/z%3A%5CSEDAR%5CLPC%5C060922%5C0002%5C2015YE%5CAnnualReport.pdf
+Songo Songo,31st December 2013,Gas,2P,Unspecified,113.5,Bcf,gross,http://www.sedar.com/GetFile.do?lang=EN&docClass=2&issuerNo=00021084&fileName=/csfsprod/data151/filings/02346548/00000001/z%3A%5CSEDAR%5CLPC%5C060922%5C0002%5C2015YE%5CAnnualReport.pdf
+STAMICO Biharamulo Mine,19th June 2014,Gold,Proved,Unspecified,0.1,million ounces,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+TanzaniteOne Mine,23rd July 2014,Tanzanite,Measured,Unspecified,109,million carats,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Wigu Hill REE Project,30th July 2013,Rare Earth Elements,Inferred,Unspecified,3.3,million tonnes,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf
+Williamson Diamond Mine,3rd October 2014,Diamonds,Indicated & Inferred,Unspecified,33.1,million carats,gross,http://www.tmaa.go.tz/uploads/ANNUAL_REPORT_2014.pdf

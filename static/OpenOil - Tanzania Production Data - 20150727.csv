@@ -1,0 +1,48 @@
+project,date,commodity,actual predicted,confidence,level,unit,per,net gross,source
+Songo Songo,2014,Gas,Actual (produced),—,19421,MMcf,year,gross,http://www.sedar.com/GetFile.do?lang=EN&docClass=25&issuerNo=00021084&fileName=/csfsprod/data151/filings/02346553/00000001/z%3A%5CSEDAR%5CLPC%5C060922%5C0002%5C2015YE%5CNI51101F1.pdf
+Songo Songo,2013,Gas,Actual (produced),—,22435,MMcf,year,gross,http://www.sedar.com/GetFile.do?lang=EN&docClass=25&issuerNo=00021084&fileName=/csfsprod/data149/filings/02197445/00000001/z%3A%5CSEDAR%5CLPC%5C060922%5C0002%5C2014YE%5C51101F1.pdf
+Songo Songo,2012,Gas,Actual (produced),—,20645,MMcf,year,gross,http://www.sedar.com/GetFile.do?lang=EN&docClass=25&issuerNo=00021084&fileName=/csfsprod/data141/filings/02050710/00000001/z%3A%5CSEDAR%5CLPC%5C060922%5C0002%5C2013YE%5C51101F1.pdf
+Songo Songo,2011,Gas,Actual (produced),—,17465,MMcf,year,gross,http://www.sedar.com/GetFile.do?lang=EN&docClass=25&issuerNo=00021084&fileName=/csfsprod/data129/filings/01896992/00000001/z%3A%5CSEDAR%5CLPC%5C060922%5C0002%5C2011YE%5CFormF1final.pdf
+Songo Songo,2010,Gas,Actual (produced),—,13444,MMcf,year,gross,http://www.sedar.com/GetFile.do?lang=EN&docClass=25&issuerNo=00021084&fileName=/csfsprod/data117/filings/01737252/00000001/z%3A%5CSEDAR%5CLPC%5C060922%5C0002%5CYE2010%5CForm51101F1.pdf
+Songo Songo,2009,Gas,Actual (produced),—,10422,MMcf,year,gross,http://www.sedar.com/GetFile.do?lang=EN&docClass=25&issuerNo=00021084&fileName=/csfsprod/data106/filings/01573284/00000001/z%3A%5CSEDAR%5CLPC%5C060922%5C0002%5C51101%5CComplete51101.pdf
+Songo Songo,2008,Gas,Actual (produced),—,8660,MMcf,year,gross,http://www.sedar.com/GetFile.do?lang=EN&docClass=25&issuerNo=00021084&fileName=/csfsprod/data97/filings/01419240/00000001/i%3A%5CSEDAR%5CLPC%5C060922%5C0002%5C2009Reserves%5COILGASDEC31.pdf
+Songo Songo,2007,Gas,Actual (produced),—,7731,MMcf,year,gross,http://www.sedar.com/GetFile.do?lang=EN&docClass=25&issuerNo=00021084&fileName=/csfsprod/data89/filings/01256190/00000001/i%3A%5CSEDAR%5CDWR%5C060922-2%5C2007%5C2007oilandgasannualdisclosure.pdf
+Songo Songo,2006,Gas,Actual (produced),—,4837,MMcf,year,gross,http://www.sedar.com/GetFile.do?lang=EN&docClass=25&issuerNo=00021084&fileName=/csfsprod/data80/filings/01094036/00000001/i%3A%5CSEDAR%5CDWR%5C060922-2%5C2007%5CAnnual51-1019F1F2F3.pdf
+Songo Songo,2005,Gas,Actual (produced),—,2448,MMcf,year,gross,http://www.sedar.com/GetFile.do?lang=EN&docClass=25&issuerNo=00021084&fileName=/csfsprod/data68/filings/00940806/00000001/i%3A%5CSEDAR%5CDWR%5C060922-2%5C2005Sedar%5C2005AnnualForm51-101F1%2CF2%2CF3.pdf
+Songo Songo,2004,Gas,Actual (produced),—,120.6,mmcf,day,gross,http://www.sedar.com/GetFile.do?lang=EN&docClass=25&issuerNo=00021084&fileName=/csfsprod/data56/filings/00773411/00000001/i%3A%5CSEDAR%5CDWR%5C060922-2%5CNI10151F12004.pdf
+Mnazi Bay,2015,Gas,Actual (produced),—,2,mmcf,day,gross,http://www.wentworthresources.com/pdf/RPS-March-2-2014-Reserves-FINAL.pdf
+Bulyanhulu Gold Mine,2014,Copper,Actual (produced),—,5289,Klbs,year,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2015/2014-annual-report-and-accounts-v2.pdf
+Bulyanhulu Gold Mine,2014,Copper,Actual (sold),—,4925,Klbs,year,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2015/2014-annual-report-and-accounts-v2.pdf
+Bulyanhulu Gold Mine,2013,Copper,Actual (produced),—,4855,Klbs,year,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2015/2014-annual-report-and-accounts-v2.pdf
+Bulyanhulu Gold Mine,2013,Copper,Actual (sold),—,4508,Klbs,year,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2015/2014-annual-report-and-accounts-v2.pdf
+Bulyanhulu Gold Mine,2014,Gold,Actual (produced),—,234786,oz,year,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2015/2014-annual-report-and-accounts-v2.pdf
+Bulyanhulu Gold Mine,2014,Gold,Actual (sold),—,215740,oz,year,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2015/2014-annual-report-and-accounts-v2.pdf
+Bulyanhulu Gold Mine,2013,Gold,Actual (produced),—,198286,oz,year,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2015/2014-annual-report-and-accounts-v2.pdf
+Bulyanhulu Gold Mine,2013,Gold,Actual (sold),—,195304,oz,year,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2015/2014-annual-report-and-accounts-v2.pdf
+Buzwagi Gold Mine,2014,Gold,Actual (produced),—,210063,oz,year,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2015/2014-annual-report-and-accounts-v2.pdf
+Buzwagi Gold Mine,2014,Gold,Actual (sold),—,213399,oz,year,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2015/2014-annual-report-and-accounts-v2.pdf
+Buzwagi Gold Mine,2014,Copper,Actual (produced),—,8780,Klbs,year,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2015/2014-annual-report-and-accounts-v2.pdf
+Buzwagi Gold Mine,2014,Copper,Actual (sold),—,8523,Klbs,year,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2015/2014-annual-report-and-accounts-v2.pdf
+Tulawaka Gold Mine,2013,Gold,Actual (produced),—,1294,oz,quarter,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2013/abg_hy2013-report-ending-30-July-2013.pdf
+Tulawaka Gold Mine,2013,Gold,Actual (sold),—,1610,oz,quarter,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2013/abg_hy2013-report-ending-30-July-2013.pdf
+Tulawaka Gold Mine,2012,Gold,Actual (produced),—,7376,oz,quarter,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2013/abg_hy2013-report-ending-30-July-2013.pdf
+Tulawaka Gold Mine,2012,Gold,Actual (sold),—,6545,oz,quarter,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2013/abg_hy2013-report-ending-30-July-2013.pdf
+Tulawaka Gold Mine,2013,Gold,Actual (produced),—,4640,oz,six months,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2013/abg_hy2013-report-ending-30-July-2013.pdf
+Tulawaka Gold Mine,2013,Gold,Actual (sold),—,5565,oz,six months,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2013/abg_hy2013-report-ending-30-July-2013.pdf
+Tulawaka Gold Mine,2012,Gold,Actual (produced),—,18550,oz,six months,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2013/abg_hy2013-report-ending-30-July-2013.pdf
+Tulawaka Gold Mine,2012,Gold,Actual (sold),—,18375,oz,six months,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2013/abg_hy2013-report-ending-30-July-2013.pdf
+North Mara Gold Mine,2014,Gold,Actual (produced),—,273803,oz,year,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2015/2014-annual-report-and-accounts-v2.pdf
+North Mara Gold Mine,2014,Gold,Actual (sold),—,274540,oz,year,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2015/2014-annual-report-and-accounts-v2.pdf
+North Mara Gold Mine,2013,Gold,Actual (produced),—,256732,oz,year,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2015/2014-annual-report-and-accounts-v2.pdf
+North Mara Gold Mine,2013,Gold,Actual (sold),—,260945,oz,year,gross,http://www.acaciamining.com/~/media/Files/A/Acacia/reports/2015/2014-annual-report-and-accounts-v2.pdf
+Merelani Block C,2014,Tanzanite,Actual (produced),—,3.1,million carat,year,gross,http://www.richlandresourcesltd.com/wp-content/uploads/2015/05/Richland-Resources-2014-Annual-Report-and-Financial-Statements.pdf
+Merelani Block C,2013,Tanzanite,Actual (produced),—,3.5,million carat,year,gross,http://www.richlandresourcesltd.com/wp-content/uploads/2015/05/Richland-Resources-2014-Annual-Report-and-Financial-Statements.pdf
+Golden Pride Gold Mine,2014,Gold,Actual (produced),—,37989,oz,year,gross,http://www.rml.com.au/wp-content/uploads/2014/10/2014-Annual-Report.pdf
+Golden Pride Gold Mine,2013,Gold,Actual (produced),—,97827,oz,year,gross,http://www.rml.com.au/wp-content/uploads/2014/10/2014-Annual-Report.pdf
+Mbeya Cement,2014,Cement,Capacity,—,0.3,million tonnes,year,gross,http://www.lafarge.com/sites/default/files/atoms/files/03232015-press_publication-2014_annual_report-uk_0.pdf
+Tancoal Mine,2014,Coal,Actual (produced),—,203264,tonnes,year,gross,http://www.intraenergycorp.com.au/IRM/Company/ShowPage.aspx/PDFs/1774-10000000/AnnualReporttoshareholders
+Tancoal Mine,2013,Coal,Actual (produced),—,105484,tonnes,year,gross,http://www.intraenergycorp.com.au/IRM/Company/ShowPage.aspx/PDFs/1774-10000000/AnnualReporttoshareholders
+New Luika Mine,2013,Gold,Actual (produced),—,64054,oz,year,gross,https://portal.mem.go.tz/site/CustomHtml.aspx?PageID=1da6ed4f-e617-4051-a220-382fea808c9b
+Geita Gold Mine,2014,Gold,Actual (produced),—,477000,oz,year,gross,http://www.anglogoldashanti.com/en/Media/Reports/Quarterly%20Reports/Q12015SummaryofOperations.pdf
+Geita Gold Mine,2013,Gold,Actual (produced),—,459000,oz,year,gross,http://www.anglogoldashanti.com/en/Media/Reports/Quarterly%20Reports/Q12014SupplementaryOperationalInformation.pdf
+Williamson Diamond Mine,2013,Diamonds,Actual (produced),—,188465,Carats,year,gross,https://www.petradiamonds.com/wp-content/uploads/pdl-interim-results-19-02-2015-v2.pdf
