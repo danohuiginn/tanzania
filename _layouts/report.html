@@ -36,7 +36,9 @@ hide: [footer]
                 <section class="animate {%if forloop.first%}active{%endif%}"
                 data-index="{{forloop.index}}"
                 {% if reportpage.zoom_to %} data-nav='["{{reportpage.zoom_to.lat}}", "{{reportpage.zoom_to.lon}}", "{{reportpage.zoom_to.zoom}}"]'{% endif %}
-			 {% if reportpage.layers %} data-map-layers='[{% for layer in reportpage.layers %}"{{layer}}"{% unless forloop.last %} ,{% endunless %}{% endfor %}]'{% endif %}
+			 {% if reportpage.map-layers-selected %} data-map-layers-selected='[{% for layer in reportpage.map-layers-selected %}"{{layer}}"{% unless forloop.last %} ,{% endunless %}{% endfor %}]'{% endif %}
+
+			 {% if reportpage.map-layers-available %} data-map-layers-available='[{% for layer in reportpage.map-layers-available %}"{{layer}}"{% unless forloop.last %} ,{% endunless %}{% endfor %}]'{% endif %}
 
 			 {% if reportpage.oo_iframe.opacity == 1 %}
 			 data-visible_layer="oo_iframe"

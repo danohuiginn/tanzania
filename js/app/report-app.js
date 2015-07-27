@@ -39,8 +39,11 @@ $('#openoil_map_overlay_iframe iframe').attr('src') != $this.data('oo_iframe-src
 	$('#openoil_map_overlay_iframe iframe').attr('src', $this.data('oo_iframe-src'));
     }
 
-    if($this.data('map-layers')){
-	moabi.setLayers($this.data('map-layers'));
+    if($this.data('map-layers-selected')){
+	moabi.setLayers(
+	    ($this.data('map-layers-selected') || []),
+	    ($this.data('map-layers-available') || [])
+	);
     }
     else{
 	console.log('no map layers');

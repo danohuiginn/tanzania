@@ -71,17 +71,7 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
       $('.page-fade-link').on('click', this.fade2Page);*/
     },
 
-      setLayers: function(layernames){
-	  var theMap = this.map;
-	  console.log('layernames are' + layernames);
-	  //layers = OO_LAYERS;
-	  layers = {};
-	  $.each(layernames, function(i){
-	      l = layernames[i];
-	      layers[l] = OO_LAYERS[l];
-	  });
-	  console.log('new layers are ' + layers);
-	      
+      setLayers: function(selected, available){	      
 	  
 	var build_legend = function(linknames){
 	    var menu_ui = document.getElementById('menu-ui');
@@ -130,6 +120,16 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
 	    
 	}
 
+	  layernames = selected.concat(available);
+	  console.log('layernames are' + layernames);
+	  var theMap = this.map;
+	  //layers = OO_LAYERS;
+	  layers = {};
+	  $.each(layernames, function(i){
+	      l = layernames[i];
+	      layers[l] = OO_LAYERS[l];
+	  });
+	  console.log('new layers are ' + layers);
 
 	  
 	  $.each(layers, function(i,v){
@@ -168,11 +168,11 @@ function (moabi, L, leafletImage, leaflet_hash, $, sortable) {
 	}
 
 
-	moabi.setLayers(OO_LAYERS);
+	//moabi.setLayers(OO_LAYERS);
 
 
 	
-	window.setInterval(function(){
+	window.setTimeout(function(){
 	    $('.menu-ui a').click();
 	    $('.menu-ui a').click();
 	}, 1000);
