@@ -54,6 +54,12 @@ OO_LAYERSTYLES = {
 	'color': '#4C8066',
 	'fillColor': '#ADFFD6',
 	'fillOpacity': 0.5},
+    'Land Use': {
+		'fillOpacity': 0.2},
+    'Forests': {
+		'fillOpacity': 0.2},
+    'Districts': {
+		'fillOpacity': 0.2},
     'Selected Areas': {},
 }
 
