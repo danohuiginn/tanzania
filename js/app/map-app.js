@@ -7,20 +7,19 @@ BASELAYER = 'openoil.n0p9n71e' // satellite
 OO_LAYERS_OUTER = {
     'Protected Areas': 'openoil.mnn67a0f',
     //'Active PML Licenses': 'openoil.mnn3hpd1',
-    'Application PML Licenses': 'openoil.mnn2ofh1',
-    'Active ML Licenses': 'openoil.mnn06d6p',
+    'Application PML Licenses': 'openoil.n1064eb2',
+    'Active ML Licenses': 'openoil.n105eiib',
     'Oil Blocks': 'openoil.n0p81j5h',
-    'Available Contractual Information': 'openoil.n0lhjbfl',
-    'Selected Areas': 'openoil.n0kd050j',
+    'Available Contractual Information': 'openoil.n10hp1a4',
+    'Reserves, Production, Costs Data': 'openoil.n10afcfi',
 
 //}
 
 //OO_LAYERS_BULYANHULU = {
-    'Land Use': 'openoil.n04fad5c',
-    'Forests': 'openoil.n04f46p0',
-    'Regions': 'openoil.n04epaki',
-    'Admin': 'openoil.n04e8k7i',}
-
+    'Land Use': 'openoil.n104c1g7',
+    'Forests': 'openoil.n103oa9l',
+    'Districts': 'openoil.n103e44i',}
+    
 OO_LAYERS = OO_LAYERS_OUTER;
 
 /*
